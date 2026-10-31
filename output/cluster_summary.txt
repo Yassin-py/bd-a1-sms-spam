@@ -1,0 +1,18 @@
+Number of clusters (k): 2
+Silhouette score: 0.0087
+
+Cluster sizes:
+cluster
+0    5349
+1     223
+Name: count, dtype: int64
+
+Top terms per cluster:
+Cluster 0: ok, just, ll, ur, come, good, know, like, time, got
+Cluster 1: gt, lt, decimal, like, min, ll, minutes, come, got, rs
+
+Cluster vs actual label:
+label     ham  spam
+cluster            
+0        4602   747
+1         223     0

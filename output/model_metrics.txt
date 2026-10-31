@@ -1,0 +1,24 @@
+Model: Multinomial Naive Bayes
+Accuracy: 0.9749
+Precision: 1.0000
+Recall: 0.8121
+F1-score: 0.8963
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         ham       0.97      1.00      0.99       966
+        spam       1.00      0.81      0.90       149
+
+    accuracy                           0.97      1115
+   macro avg       0.99      0.91      0.94      1115
+weighted avg       0.98      0.97      0.97      1115
+
+
+Bonus: Classifier comparison
+                     Accuracy  Spam precision  Spam recall   Spam F1
+Model                                                               
+Naive Bayes          0.974888             1.0     0.812081  0.896296
+Logistic Regression  0.972197             1.0     0.791946  0.883895
+
+Both classifiers use the same training/test split and TF-IDF features. Naive Bayes has a spam F1-score of 0.8963, while Logistic Regression has 0.8839. Naive Bayes has the higher spam F1-score. F1 balances precision and recall, which is useful for imbalanced classes. These results are from one fixed split, and the test set was not used for tuning.
